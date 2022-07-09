@@ -1,6 +1,6 @@
 
 ## Python Data Structure Tutorial 
-### I.	WELCOME
+### [I.	WELCOME](welcome.md)
 * Introduction 
 *	Contact
 ### [II.	STACKS](stacks.md)
@@ -9,14 +9,14 @@
 *	Stacks in Python
 *	Example
 *	Problem to Solve
-### III.	SETS
+### [III.	SETS](sets.md)
 * Introduction
 *	Characteristics of Sets
 *	Hashing and Sets
 *  Applications with Sets in Python
 *  Example
 *  Problem to Solve
-### IV.	Trees
+### [IV.	Trees](trees.md)
 *  Introduction
 *  Binary Trees
 *  Binary search Trees
