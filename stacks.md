@@ -3,8 +3,11 @@
 ####  Introduction
  A Stack is a data structure determined by the order a piece of data is entered and the order that leaves the structure. It is contrary to what is known as queues( similar to a bank queue). In a Stack the last data entering the structure is the first to exit. This is known as LIFO(Last in, first out). 
 ####  Stack of Pancakes 
-To understand this concept more clearly, it will be represented with a tray of pancakes. At the moment that the tray is filled, the last one that is added is the first to be taken to eat. This means that the first one that came out of the oven is going to be the last one to be eaten. 
+To understand this concept more clearly, it will be represented with a tray of pancakes. At the moment that the tray is filled, the last one that is added is the first to be taken to eat. This means that the first one that came out of the oven is going to be the last one to be eaten.
 
+![image](https://user-images.githubusercontent.com/38995873/178117196-86dc020a-2fb6-48fd-b23d-8fcd033ceb81.png)
+
+	
 	
 ####  Stacks in Python
 A Stack in Python can be represented with a list. Where default functions will be used to add, get, and calculate their size. In the following table you can see the functions that are used to handle a list.
