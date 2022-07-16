@@ -14,6 +14,12 @@ The main uses of sets in Python are as follows:
 * Search for a single value in a list.
 * Provide quick access to a single value after a calculation process.
 * Improvement in processes between sets such as union, intersection, differentiation, etc.
+
+Functions for sets
+* add(value)	Adds "value" to the set	my_set.add(value)	O(1) - Performance of hashing the value (assuming good conflict resolution)
+* remove(value)	Removes the "value" from the set	my_set.remove(value)	O(1) - Performance of hashing the value (assuming good conflict resolution)
+* member(value)	Determines if "value" is in the set	if value in my_set:	O(1) - Performance of hashing the value (assuming good conflict resolution)
+* size()	Returns the number of items in the set	length = len(my_set)	O(1) - Performance of returning the size of the set
 #### Example
 set1 = {1, 2, 3, 4, 5}
 
