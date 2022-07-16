@@ -14,3 +14,18 @@ The main uses of sets in Python are as follows:
 * Search for a single value in a list.
 * Provide quick access to a single value after a calculation process.
 * Improvement in processes between sets such as union, intersection, differentiation, etc.
+#### Example
+set1 = {1, 2, 3, 4, 5}
+
+set2 = {4, 5, 6, 7, 8}
+
+set3 = intersection(set1, set2)  # This will result in {4, 5}
+
+set3 = set1 & set2               # Alternate way of writing an intersection
+
+set4 = union(set1, set2)  # This will result in {1, 2, 3, 4, 5, 6, 7, 8}
+
+set4 = set1 | set2        # Alternate way of writing a union
+#### Problem to Solve
+Assume you have been asked in an interview to describe how you would write a function to find the intersection of two sets and a function to find the union of two sets. An intersection will return a set containing items that are common between the two sets. A union will return a set containing all items from both sets. Do not use the set operators (+, -, *, &, |) and functions (intersection, union) that are built-in to Python. You will need to use a set to to implement these functions.
+
