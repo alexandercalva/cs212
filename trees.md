@@ -28,3 +28,81 @@ Now using the AVL algorithm this problem is going to be corrected as seen in the
 
 ![image](https://user-images.githubusercontent.com/38995873/179335695-c09add0b-7f78-46a1-a371-d2c353c5e1f1.png)
 
+#### Example
+
+def insert(self, data):
+
+	"""
+	Insert 'data' into the BST.  If the BST
+	is empty, then set the root equal to the new 
+	node.  Otherwise, use _insert to recursively
+	find the location to insert.
+	"""
+  
+	if self.root is None:
+		self.root = BST.Node(data)
+	else:
+		self._insert(data, self.root)  # Start at the root
+
+
+def _insert(self, data, node):
+
+	"""
+	This function will look for a place to insert a node
+	with 'data' inside of it.  The current subtree is
+	represented by 'node'.  This function is intended to be
+	called the first time by the insert function.
+	"""
+  
+	if data < node.data:
+		# The data belongs on the left side.
+		if node.left is None:
+			# We found an empty spot
+			node.left = BST.Node(data)
+		else:
+			# Need to keep looking.  Call _insert
+			# recursively on the left subtree.
+			self._insert(data, node.left)
+	elif data >= node.data:
+		# The data belongs on the right side.
+		if node.right is None:
+			# We found an empty spot
+			node.right = BST.Node(data)
+		else:
+			# Need to keep looking.  Call _insert
+			# recursively on the right subtree.
+			self._insert(data, node.right)
+      
+ #### Problem to Solve
+INSERT UNIQUE VALUES ONLY
+Update the _insert function of the BST class to only allow unique values to be added to the tree (thus creating a sorted set). The _insert function is already written to correctly insert values into the BST. However, the current implementation will cause duplicate values to be added to the tree.
+
+def _insert(self, data, node):
+
+        """
+        This function will look for a place to insert a node
+        with 'data' inside of it.  The current sub-tree is
+        represented by 'node'.  This function is intended to be
+        called the first time by the insert function.
+        """
+        
+        if data < node.data:
+            # The data belongs on the left side.
+            if node.left is None:
+                # We found an empty spot
+                node.left = BST.Node(data)
+            else:
+                # Need to keep looking.  Call _insert
+                # recursively on the left sub-tree.
+                self._insert(data, node.left)
+        else:
+            # The data belongs on the right side.
+            if node.right is None:
+                # We found an empty spot
+                node.right = BST.Node(data)
+            else:
+                # Need to keep looking.  Call _insert
+                # recursively on the right sub-tree.
+                self._insert(data, node.right)
+                
+                
